@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+    <html>
+        <head lang="en-us">
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Registeration</title>
+
+            <link rel="stylesheet" type="text/css" media="all" href="../bulded/stylesheets/stylesheet_registeration.css" />
+            <script src="javascripts/dynamic-header-picture.js" type="text/javascript"></script>
+        </head>
+        <body>
+            <div class="content wrap">
+                <div class="head wrap">
+                    <nav>
+                        <button id="menuBTN">
+                            <img src="../bulded/images/align-justify(1).png" alt="" title="" />
+                        </button>
+                        <div class="nav wrap">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="registeration.html">Ragistration</a></li>
+                                <li><a href="teacher.html">Teacher</a></li>
+                                <li><a href="student-feedback.html">Student Feedback</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <header>
+                        <h1>Bakhtar School</h1>
+                    </header>
+                    <div id="user-aria">
+                        <button>
+                            <a href="signin-&-signup.html">Login</a>
+                        </button>
+                        <button>
+                            <a href="signin-&-signup.html">Sign Up</a>
+                        </button>
+                    </div>
+               </div>
+               <main>
+                    <article>
+                        <section id="slid-wrap">
+                            <div>
+                                <figure>
+                                    <img src="../bulded/images/school-cropted-big-01.jpg" alt="" title="" />
+                                    <figcaption>
+                                        info about photo
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../bulded/images/school-cropted-big-02.jpg" alt="" title="" />
+                                    <figcaption>
+                                        info about photo
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../bulded/images/school-cropted-big-03.jpg" alt="" title="" />
+                                    <figcaption>
+                                        info about photo
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../bulded/images/school-cropted-big-08.jpg" alt="" title="" />
+                                    <figcaption>
+                                        info about photo
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../bulded/images/school-cropted-big-05.jpg" alt="" title="" />
+                                    <figcaption>
+                                        info about photo
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../bulded/images/school-cropted-big-06.jpg" alt="" title="" />
+                                    <figcaption>
+                                        info about photo
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div id="btn-holders">
+                                <label for="" class="btn-01"></label>
+                                <label for="" class="btn-02"></label>
+                                <label for="" class="btn-03"></label>
+                                <label for="" class="btn-04"></label>
+                                <label for="" class="btn-05"></label>
+                                <label for="" class="btn-06"></label>
+                            </div>
+                        </section>
+                        <section>
+                    <!--    <div id="registration-wrap">
+                                <form action="" metho="post" enctype="multipart/form-data">
+                                    <fieldset>
+                                        <legend>Student Registeration</legend>
+                                        <span>Name:</span>
+                                        <span>
+                                            <input type="text" name="studentName" value="" placeholder="Your first Name" autocomplete="off" autofocus />
+                                        </span>
+                                        <span>Father Name:</span>
+                                        <span>
+                                            <input type="text" name="fatherName" value="" placeholder="Your Father Name" autocomplete="off" />
+                                        </span>
+                                        <span>Last Name:</span>
+                                        <span>
+                                            <input type="text" name="lastName" value="" placeholder="Your Family Name" autocomplete="off" />
+                                        </span>
+                                        <span>Grand Father Name:</span>
+                                        <span>
+                                            <input type="text" name="grandPaName" value="" placeholder="Your Grandpa Name" autocomplete="off" />
+                                        </span>
+                                        <span>Email Address:</span>
+                                        <span>
+                                            <input type="email" name="studentEmail" value="" placeholder="someone@gmail.com" autocomplete="off" />
+                                        </span>
+                                        <span>Birthday:</span>
+                                        <span>
+                                            <input type="date" name="studentEmail" value="" />
+                                        </span>
+                                        <span>Gender:</span>
+                                        <span>
+                                            <label for="male">Male:</label>
+                                            <input type="radio" name="gender" value="male" id="male" />
+                                            
+                                            <label for="female">Female:</label>
+                                            <input type="radio" name="gender" value="female" id="female" />
+                                        </span>
+                                        <span>
+                                            <input type="submit" name="submit" value="Register" />
+                                        </span>
+                                    </fieldset>
+                                </form>
+                            </div> -->
+
+                            <div id="registration-wrap">
+                                <form action="" metho="post" enctype="multipart/form-data">
+                                    <fieldset>
+                                        <hgroup>
+                                            <h3>Student Registeration</h3>
+                                        </hgroup>
+                                        <span class="input-group">
+                                            <input type="text" name="studentName" value="" autocomplete="off" required/>
+                                            <label>Name:</label>
+                                        </span>
+                                        <span class="input-group">
+                                            <input type="text" name="fatherName" value="" autocomplete="off" required/>
+                                            <label>Father Name:</label>
+                                        </span>
+                                        <span class="input-group">
+                                            <input type="text" name="lastName" value=""autocomplete="off" required/>
+                                            <label>Last Name:</label>
+                                        </span>
+                                        <span class="input-group">
+                                            <input type="text" name="grandPaName" value="" autocomplete="off" required/>
+                                            <label>Grand Father Name:</label>
+                                        </span>
+                                        <span class="input-group">
+                                            <input type="email" name="studentEmail" value="" autocomplete="off" required/>
+                                            <label>Email Address:</label>
+                                        </span>
+                                        <span>
+                                            <label for="birdhday">Birthday:</label>
+                                        </span>
+                                        <span>
+                                            <input type="date" name="studentEmail" value="" id="birdhday" />
+                                        </span>
+                                        <span>
+                                            <label for="male">Gender:</label>
+                                        </span>
+                                        <span>
+                                            <label for="male">Male:</label>
+                                            <input type="radio" name="gender" value="male" id="male" />
+                                            
+                                            <label for="female">Female:</label>
+                                            <input type="radio" name="gender" value="female" id="female" />
+                                        </span>
+                                        <span>
+                                            <!-- <input type="submit" name="submit" value="Register" /> -->
+                                            <button type="submit">Register</button>
+                                        </span>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </section>
+                    </article>
+               </main>
+               <footer>
+                    <div id="footer-wrap">
+                        <figure>
+                            <a href="https://www.youtube.com/channel/UCWeqOhfeEvvBpkYH_R5lLpg/featured">
+                                <img src="images/social icons/youtube(1).png" alt="" title="" /> 
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://github.com/fahimib32/web-deployment#repastory-name---deployee-we">
+                                <img src="images/social icons/github (2).png" alt="" title="" />
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://twitter.com/fahimib32">
+                                <img src="images/social icons/twitter (1).png" alt="" title="" />
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://www.facebook.com/">
+                                <img src="images/social icons/facebook.png" alt="" title="" />
+                            </a>
+                        </figure>
+                        <div>
+                            <p>Copyright &copy; 2022</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </body>
+    </html>

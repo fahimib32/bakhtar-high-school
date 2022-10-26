@@ -1,0 +1,527 @@
+/*--------------------------------------------------------------------------------------
+    Global Variables
+--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------
+    Functions
+--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------
+    Global Style
+--------------------------------------------------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/* Header Section
+--------------------------------------------------------------------------------------*/
+header {
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Content Wrap Section
+--------------------------------------------------------------------------------------*/
+.content {
+  background: url(../images/25.jpg) no-repeat fixed 0px 0px/cover;
+}
+
+/* Forms Section
+--------------------------------------------------------------------------------------*/
+section {
+  height: calc(100vh - 9.1em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  width: 40em;
+  height: 20em;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+}
+.forms .form {
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  flex: 1 0 0;
+}
+.forms .signin {
+  z-index: 2;
+  background-color: #fff;
+}
+.forms .signup {
+  z-index: 1;
+  background-color: #fff;
+}
+
+#sign-in {
+  display: grid;
+  grid-template-columns: 20em;
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 2em;
+}
+#sign-in header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-top: 2em;
+  background-color: #fff;
+}
+#sign-in header h3 {
+  margin: 0;
+  text-align: center;
+}
+#sign-in span:nth-of-type(1) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 0 auto;
+  perspective: 300rem;
+  position: relative;
+}
+#sign-in span:nth-of-type(1) input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+#sign-in span:nth-of-type(1) label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  transform-origin: bottom;
+  transform: none;
+  transition-property: transform, font-size;
+  transition-duration: 0.5s, 0.3s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease-in-out;
+}
+#sign-in span:nth-of-type(1) input:focus + label,
+#sign-in span:nth-of-type(1) input:valid + label {
+  transform: translate3d(0px, -20px, 0px);
+  font-size: 0.8em;
+  font-weight: none;
+}
+#sign-in span:nth-of-type(2) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 0 auto;
+  perspective: 300rem;
+  position: relative;
+}
+#sign-in span:nth-of-type(2) input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+#sign-in span:nth-of-type(2) label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  transform-origin: top;
+  transform: none;
+  transition-property: transform, font-size;
+  transition-duration: 0.5s, 0.3s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease-out;
+}
+#sign-in span:nth-of-type(2) input:focus + label,
+#sign-in span:nth-of-type(2) input:valid + label {
+  transform: translate3d(0px, -20px, 0px);
+  font-size: 0.8em;
+  font-weight: none;
+}
+#sign-in span:nth-of-type(3) {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin: 0 auto;
+}
+#sign-in span:nth-of-type(3) button {
+  width: 150px;
+  padding: 5px;
+  border: none;
+  font-size: 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+}
+#sign-in span:nth-of-type(3) button::before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: hsla(0deg, 0%, 0%, 0.3);
+  transform: translate3d(0px, -30px, 0px);
+  transform-origin: top center;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+}
+#sign-in span:nth-of-type(3) button:hover,
+#sign-in span:nth-of-type(3) button:focus {
+  color: #fff;
+}
+#sign-in span:nth-of-type(3) button:hover:before,
+#sign-in span:nth-of-type(3) button:focus:before {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+#sign-up {
+  display: grid;
+  grid-template-columns: 20em;
+  grid-template-rows: repeat(6, auto);
+  grid-row-gap: 2em;
+  justify-content: center;
+}
+#sign-up header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-top: 2em;
+  background-color: #fff;
+}
+#sign-up header h3 {
+  margin: 0;
+  text-align: center;
+}
+#sign-up span:nth-of-type(1) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 0 auto;
+  position: relative;
+}
+#sign-up span:nth-of-type(1) input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+#sign-up span:nth-of-type(1) label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  transform-origin: bottom;
+  transform: none;
+  transition-property: transform, font-size;
+  transition-duration: 0.5s, 0.3s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease-in-out;
+}
+#sign-up span:nth-of-type(1) input:focus + label,
+#sign-up span:nth-of-type(1) input:valid + label {
+  transform: translate3d(0px, -20px, 0px);
+  font-size: 0.8em;
+  font-weight: none;
+}
+#sign-up span:nth-of-type(2) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 0 auto;
+  position: relative;
+}
+#sign-up span:nth-of-type(2) input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+#sign-up span:nth-of-type(2) label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  transform-origin: bottom;
+  transform: none;
+  transition-property: transform, font-size;
+  transition-duration: 0.5s, 0.3s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease-in-out;
+}
+#sign-up span:nth-of-type(2) input:focus + label,
+#sign-up span:nth-of-type(2) input:valid + label {
+  transform: translate3d(0px, -20px, 0px);
+  font-size: 0.8em;
+  font-weight: none;
+}
+#sign-up span:nth-of-type(3) {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin: 0 auto;
+  position: relative;
+}
+#sign-up span:nth-of-type(3) input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+#sign-up span:nth-of-type(3) label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  transform-origin: bottom;
+  transform: none;
+  transition-property: transform, font-size;
+  transition-duration: 0.5s, 0.3s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease-in-out;
+}
+#sign-up span:nth-of-type(3) input:focus + label,
+#sign-up span:nth-of-type(3) input:valid + label {
+  transform: translate3d(0px, -20px, 0px);
+  font-size: 0.8em;
+  font-weight: none;
+}
+#sign-up span:nth-of-type(4) {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  margin: 0 auto;
+}
+#sign-up span:nth-of-type(4) button {
+  width: 150px;
+  padding: 5px;
+  border: none;
+  font-size: 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+}
+#sign-up span:nth-of-type(4) button::before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: hsla(0deg, 0%, 0%, 0.3);
+  transform: translate3d(0px, -30px, 0px);
+  transform-origin: top center;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+}
+#sign-up span:nth-of-type(4) button:hover,
+#sign-up span:nth-of-type(4) button:focus {
+  color: #fff;
+}
+#sign-up span:nth-of-type(4) button:hover:before,
+#sign-up span:nth-of-type(4) button:focus:before {
+  transform: translate3d(0px, 0px, 0px);
+}
+#sign-up span:nth-of-type(5) {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  margin-left: 1em;
+}
+#sign-up span:nth-of-type(5) a {
+  font-size: 0.8em;
+  color: #000;
+  text-decoration: none;
+}
+
+.overlay-container {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  flex: 1 0 0;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+.overlay-photo {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 4;
+  transform-origin: left center;
+  transform: translate3d(0px, 0px, 0px);
+  background: url("../images/25.jpg") no-repeat fixed 0px 0px/cover;
+  display: flex;
+  align-items: center;
+}
+.overlay-photo div:nth-child(1) {
+  flex: 1 0 0;
+  order: 2;
+}
+.overlay-photo div:nth-child(1) button {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  font-size: 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.overlay-photo div:nth-child(1) button::before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: hsla(0deg, 0%, 0%, 0.3);
+  transform: translate3d(0px, -30px, 0px);
+  transform-origin: top center;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+}
+.overlay-photo div:nth-child(1) button:hover,
+.overlay-photo div:nth-child(1) button:focus {
+  color: #fff;
+}
+.overlay-photo div:nth-child(1) button:hover:before,
+.overlay-photo div:nth-child(1) button:focus:before {
+  transform: translate3d(0px, 0px, 0px);
+}
+.overlay-photo div:nth-child(2) {
+  flex: 1 0 0;
+}
+.overlay-photo div:nth-child(2) button {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  font-size: 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.overlay-photo div:nth-child(2) button::before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: hsla(0deg, 0%, 0%, 0.3);
+  transform: translate3d(0px, -30px, 0px);
+  transform-origin: top center;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+}
+.overlay-photo div:nth-child(2) button:hover,
+.overlay-photo div:nth-child(2) button:focus {
+  color: #fff;
+}
+.overlay-photo div:nth-child(2) button:hover:before,
+.overlay-photo div:nth-child(2) button:focus:before {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.overlay-container-left {
+  transform: translate3d(-320px, 0px, 0px);
+  transform-origin: left center;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.overlay-photo-left {
+  transform: translate3d(320px, 0px, 0px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.overlay-container-right {
+  transform: translate3d(0px, 0px, 0px);
+  transform-origin: left center;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.overlay-photo-right {
+  transform: translate3d(0px, 0px, 0px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Footer Section
+--------------------------------------------------------------------------------------*/
+footer {
+  background-color: hsla(0deg, 0%, 100%, 0.3);
+}
+footer #footer-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 5em);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  grid-row-gap: 1em;
+  padding-top: 1em;
+}
+footer figure {
+  width: 50px;
+  margin: 0 auto;
+}
+footer img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+footer figure:nth-of-type(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+footer figure:nth-of-type(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+footer figure:nth-of-type(3) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+footer figure:nth-of-type(4) {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+footer div {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+footer div p {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+footer a {
+  display: flex;
+}
+/*# sourceMappingURL=stylesheet_signin_and_signup.css.map */
